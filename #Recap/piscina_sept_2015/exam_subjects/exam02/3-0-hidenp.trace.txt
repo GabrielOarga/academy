@@ -1,0 +1,85 @@
+= Host information =============================================================
+$> hostname; uname -msr
+e2r6p9.42.fr
+Darwin 14.5.0 x86_64
+
+$> date
+Fri Sep 18 19:23:47 CEST 2015
+
+$> gcc --version
+Configured with: --prefix=/Applications/Xcode.app/Contents/Developer/usr --with-gxx-include-dir=/usr/include/c++/4.2.1
+Apple LLVM version 6.1.0 (clang-602.0.53) (based on LLVM 3.6.0svn)
+Target: x86_64-apple-darwin14.5.0
+Thread model: posix
+
+$> clang --version
+Apple LLVM version 6.1.0 (clang-602.0.53) (based on LLVM 3.6.0svn)
+Target: x86_64-apple-darwin14.5.0
+Thread model: posix
+
+= hidenp =======================================================================
+$> clang -Wextra -Wall -Werror hidenp.c -o user_exe 
+
+= Test 1 ===================================================
+$> ./gyhju1h7exr3r9t3delt1jzd "abc" "a"
+$> diff -U 3 user_output_test1 test1.output | cat -e
+
+Diff OK :D
+= Test 2 ===================================================
+$> ./a3hqiwcxk7fshx7wozchvh29 "" "abc"
+$> diff -U 3 user_output_test2 test2.output | cat -e
+
+Diff OK :D
+= Test 3 ===================================================
+$> ./q7s7xeirsfkq1uzu7x8nz9pb "abc" ""
+$> diff -U 3 user_output_test3 test3.output | cat -e
+
+Diff OK :D
+= Test 4 ===================================================
+$> ./nmfj81cd89ztp3q6kchsigyd "abc" "abc"
+$> diff -U 3 user_output_test4 test4.output | cat -e
+
+Diff OK :D
+= Test 5 ===================================================
+$> ./lit46zgt8175kbzkxa1vmh25 "abc" "adbc"
+$> diff -U 3 user_output_test5 test5.output | cat -e
+
+Diff OK :D
+= Test 6 ===================================================
+$> ./d3yw795pimlbdjclov5bi48d "abc" "adcb"
+$> diff -U 3 user_output_test6 test6.output | cat -e
+
+Diff OK :D
+= Test 7 ===================================================
+$> ./ckmy9fx3w6iwxd8w4blgivnn "abc" "adcbjgieuwhc"
+$> diff -U 3 user_output_test7 test7.output | cat -e
+
+Diff OK :D
+= Test 8 ===================================================
+$> ./1fd3fuaqj6nuwk5lyibvsig4 "abc" "adbcd"
+$> diff -U 3 user_output_test8 test8.output | cat -e
+
+Diff OK :D
+= Test 9 ===================================================
+$> ./bdmf5m3s7w8453vuqnzy7qmb "abc" "abababababababab"
+$> diff -U 3 user_output_test9 test9.output | cat -e
+
+Diff OK :D
+= Test 10 ==================================================
+$> ./vmzv2vx3tyf9jt4lkhwsydnk "zzzzzz" "z"
+$> diff -U 3 user_output_test10 test10.output | cat -e
+
+Diff OK :D
+= Test 11 ==================================================
+$> ./qjnd9z9u5g392idlvd9yn9yb "zzzzzz" "zzzz"
+$> diff -U 3 user_output_test11 test11.output | cat -e
+
+Diff OK :D
+= Test 12 ==================================================
+$> ./rwcobb0trjxand3fkl90r0bp "zzzzzz" "azzzzzzzzzzzzz"
+$> diff -U 3 user_output_test12 test12.output | cat -e
+
+Diff OK :D
+Grade: 1
+
+= Final grade: 1 ===============================================================

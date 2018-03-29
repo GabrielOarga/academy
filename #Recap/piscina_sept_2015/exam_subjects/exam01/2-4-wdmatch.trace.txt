@@ -1,0 +1,60 @@
+= Host information =============================================================
+$> hostname; uname -msr
+e2r11p16.42.fr
+Darwin 14.5.0 x86_64
+
+$> date
+Fri Sep 11 18:31:21 CEST 2015
+
+$> gcc --version
+Configured with: --prefix=/Applications/Xcode.app/Contents/Developer/usr --with-gxx-include-dir=/usr/include/c++/4.2.1
+Apple LLVM version 6.1.0 (clang-602.0.53) (based on LLVM 3.6.0svn)
+Target: x86_64-apple-darwin14.5.0
+Thread model: posix
+
+$> clang --version
+Apple LLVM version 6.1.0 (clang-602.0.53) (based on LLVM 3.6.0svn)
+Target: x86_64-apple-darwin14.5.0
+Thread model: posix
+
+= wdmatch ======================================================================
+$> clang -Wextra -Wall -Werror wdmatch.c -o user_exe 
+
+= Test 1 ===================================================
+$> ./9c42h4svjoa3ptd2pzbb7f5f "faya" "fgvvfdxcacpolhyghbreda"
+$> diff -U 3 user_output_test1 test1.output | cat -e
+
+Diff OK :D
+= Test 2 ===================================================
+$> ./tm1cnwwngxpz0phqddplpwsf "faya" "fgvvfdxcacpolhyghbred"
+$> diff -U 3 user_output_test2 test2.output | cat -e
+
+Diff OK :D
+= Test 3 ===================================================
+$> ./2e67i8ax3er6f2ss0l2we27w "quarante deux" "qfqfsudf arzgsayns tsregfdgs sjytdekuoixq "
+$> diff -U 3 user_output_test3 test3.output | cat -e
+
+Diff OK :D
+= Test 4 ===================================================
+$> ./dwl6esdfmwgzh30eeodc2vdq "error" "rrerrrfiiljdfxjyuifrrvcoojh"
+$> diff -U 3 user_output_test4 test4.output | cat -e
+
+Diff OK :D
+= Test 5 ===================================================
+$> ./hy0fhcc9t36525wdcefcyed2 "... un dernier pour la route" "... UN DERNIER POUR LA ROUTE"
+$> diff -U 3 user_output_test5 test5.output | cat -e
+
+Diff OK :D
+= Test 6 ===================================================
+$> ./en8swtll8zuoxk27kagb7l4k "oui" "qowueir"
+$> diff -U 3 user_output_test6 test6.output | cat -e
+
+Diff OK :D
+= Test 7 ===================================================
+$> ./iulddlm1z7xcv5a8bxguvhsl ""
+$> diff -U 3 user_output_test7 test7.output | cat -e
+
+Diff OK :D
+Grade: 1
+
+= Final grade: 1 ===============================================================

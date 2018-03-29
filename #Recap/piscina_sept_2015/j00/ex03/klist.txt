@@ -1,0 +1,7 @@
+Credentials cache: API:15048
+        Principal: goarga@42.FR
+
+  Issued                Expires               Principal
+Sep  1 20:41:47 2015  Sep  2 06:41:47 2015  krbtgt/42.FR@42.FR
+Sep  1 20:42:00 2015  Sep  2 06:41:47 2015  nfs/zfs-student-6.cluj.42.fr@42.FR
+Sep  1 20:56:32 2015  Sep  2 06:41:47 2015  host/vogsphere-frontend-normal-1.42.fr@42.FR
